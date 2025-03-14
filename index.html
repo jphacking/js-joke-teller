@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Script -->
-    <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joke Teller</title>
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header for the page -->
+      <h1>Joke Teller</h1>
+      <!-- Button to fetch and tell a joke -->
+      <button id="jokeButton" aria-label="Tell me a joke">
+        Tell Me A Joke
+      </button>
+      <!-- Paragraph to display the joke text -->
+      <p id="jokeText" aria-live="polite"></p>
+      <!-- Audio element for playing the joke via text-to-speech -->
+      <audio id="audio" controls hidden></audio>
+    </div>
+    <!-- External Scripts -->
+    <script src="./js/voiceRSS.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
